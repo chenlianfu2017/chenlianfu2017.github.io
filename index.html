@@ -1,12 +1,249 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      陈的主页
-    </title>
-    <meta charset=gb2312">
-  </head>
-  
-<body>
-<h1>我的个人主页</h1>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>陈联富的相册</title>
+	</head>
+	<style type="text/css">
+		*{margin:0;padding: 0;}
+		body{background-color: #000}
+		h1{text-align:center}
+		#img1{width:300px;height:200px;position:relative;left:50px;top:50px;}
+		#img1 img{width:300px;height:200px;box-shadow: 0 0 5px #fff;display: block;
+				border: 2px solid #fff;position: absolute;transition:all 0.5s;
+				transform-origin:50% 50%;}
+		#img1:hover .img7{transform:rotate(-10deg);}
+		#img1:hover .img6{transform:rotate(10deg);}
+		#img1:hover .img5{transform:rotate(-20deg);}
+		#img1:hover .img4{transform:rotate(20deg);}
+		#img1:hover .img3{transform:rotate(-30deg);}
+		#img1:hover .img2{transform:rotate(30deg);}
+		#img1:hover .img1{transform:rotate(-40deg);}
+		
+		
+		#img2{width:300px;height:200px;position:relative;left:550px;top:-100px;}
+		#img2 img{width:300px;height:200px;box-shadow: 0 0 5px #fff;display: block;
+				border: 2px solid #fff;position: absolute;transition:all 0.5s;
+				transform-origin:0% 100%;}
+		
+		
+				
+		#img2:hover .img8{transform:rotate(-5deg) translate(-10px,-10px);}
+		#img2:hover .img7{transform:rotate(-10deg) translate(-15px,-15px);}
+		#img2:hover .img6{transform:rotate(-15deg) translate(-20px,-20px);}
+		#img2:hover .img5{transform:rotate(-20deg) translate(-25px,-25px);}
+		#img2:hover .img4{transform:rotate(-25deg) translate(-30px,-30px);}
+		#img2:hover .img3{transform:rotate(-30deg) translate(-35px,-35px);}
+		#img2:hover .img2{transform:rotate(-35deg) translate(-40px,-40px);}
+		#img2:hover .img1{transform:rotate(-40deg) translate(-45px,-45px);}
+		
+		
+		
+		
+		#img3{width:300px;height:200px;position:relative;left:900px;top:-300px;}
+		#img3 img{width:300px;height:200px;box-shadow: 0 0 5px #fff;display: block;
+				border: 2px solid #fff;position: absolute;transition:all 0.5s;
+				transform-origin:100% 90%;}
+		
+		#img3:hover .img7{transform:rotate(25deg) translateY(-10px);}
+		#img3:hover .img6{transform:rotate(35deg) translateY(-15px);}
+		#img3:hover .img5{transform:rotate(45deg) translateY(-20px);}
+		#img3:hover .img4{transform:rotate(55deg) translateY(-25px);}
+		#img3:hover .img3{transform:rotate(-35deg) translate(100px,20px);}
+		#img3:hover .img2{transform:rotate(-45deg) translate(100px,40px);}
+		#img3:hover .img1{transform:rotate(-55deg) translate(100px,65px);}
+		#img3:hover .img0{transform:rotate(-65deg) translate(100px,85px);}
+		
+		
+		
+		
+		
+		#img4{width:300px;height:200px;position:relative;left:200px;top:100px;}
+		#img4 img{width:300px;height:200px;box-shadow: 0 0 5px #fff;display: block;
+				border: 2px solid #fff;position: absolute;transition:all 0.5s;
+				transform-origin:0% 80%;}
+				
+		#img4:hover .img7{transform:rotate(-25deg) translate(0px,-30px) scale(1,0.9);}
+		#img4:hover .img6{transform:rotate(-30deg) translate(0px,-80px) scale(0.9,0.8);}
+		#img4:hover .img5{transform:rotate(-35deg) translate(0px,-150px) scale(0.8,0.7);}
+		#img4:hover .img4{transform:rotate(-40deg) translate(0px,-230px) scale(0.7,0.6);}
+		#img4:hover .img3{transform:rotate(-45deg) translate(0px,-300px) scale(0.6,0.5);}
+		#img4:hover .img2{transform:rotate(-50deg) translate(0px,-330px) scale(0.5,0.4);}
+		#img4:hover .img1{transform:rotate(-55deg) translate(0px,-400px) scale(0.4,0.3);}
+		#img4:hover .img0{transform:rotate(-60deg) translate(0px,-430px) scale(0.3,0.2);}
+	
+		#img5{width:300px;height:200px;position:relative;left:800px;top:-100px;}
+		#img5 img{width:300px;height:200px;box-shadow: 0 0 5px #fff;display: block;
+				border: 2px solid #fff;position: absolute;transition:all 0.5s;
+				transform-origin:50% 50%;}
+		#img5:hover .img5{transform:rotate(-15deg);}
+		#img5:hover .img4{transform:rotate(-15deg) translate(-140px,-70px);}
+		#img5:hover .img3{transform:rotate(-15deg) translate(30px,-100px);}
+		#img5:hover .img2{transform:rotate(-15deg) translate(140px,70px);}
+		#img5:hover .img1{transform:rotate(-15deg) translate(-30px,100px);}
+		
+		
+		
+		#img6{width:300px;height:200px;position:relative;left:500px;top:200px;}
+		#img6 img{width:300px;height:200px;box-shadow: 0 0 5px #fff;display: block;
+				border: 2px solid #fff;position: absolute;transition:all 0.5s;
+				transform-origin:50% 50%;}
+				
+		#img6:hover .img9{transform:rotate(-15deg)}
+		#img6:hover .img8{transform:rotate(-15deg) translate(-230px,150px) scale(0.7,0.7);}
+		#img6:hover .img7{transform:rotate(-15deg) translate(230px,-150px) scale(0.7,0.7);}		
+		#img6:hover .img6{transform:rotate(-15deg) translate(-230px,-150px) scale(0.7,0.7);;}
+		#img6:hover .img5{transform:rotate(-15deg) translate(230px,150px) scale(0.7,0.7);}
+		#img6:hover .img4{transform:rotate(-15deg) translate(0px,-150px) scale(0.7,0.7);}
+		#img6:hover .img3{transform:rotate(-15deg) translate(0px,150px) scale(0.7,0.7);}
+		#img6:hover .img2{transform:rotate(-15deg) translate(230px,0px) scale(0.7,0.7) ;}
+		#img6:hover .img1{transform:rotate(-15deg) translate(-230px,0px) scale(0.7,0.7);}
+		
+		
+		
+		#img7{width:300px;height:200px;position:relative;left:100px;top:500px;}
+		#img7 img{width:300px;height:200px;box-shadow: 0 0 5px #fff;display: block;
+				border: 2px solid #fff;position: absolute;transition:all 0.5s;
+				transform-origin:50% 50%;}
+	
+		
+		#img7:hover .img4{transform:translateY(20px) scale(1.1,1.1);}
+		#img7:hover .img3{transform:translateY(-30px) scale(0.9,0.9)}
+		#img7:hover .img2{transform:translateY(-80px) scale(0.7,0.7);}
+		#img7:hover .img1{transform:translateY(-120px) scale(0.5,0.5);}
+		
+		
+		
+		#img8{width:300px;height:200px;position:relative;left:700px;top:300px;}
+		#img8 img{width:300px;height:200px;box-shadow: 0 0 5px #fff;display: block;
+				border: 2px solid #fff;position: absolute;transition:all 0.5s;
+				transform-origin:50% 0%;}
+		
+		
+		#img8:hover .img9{transform: translateY(20px) scale(1.1,1.1)}
+		#img8:hover .img8{transform:rotate(20deg) translate(-150px,20px) scale(0.9,0.9);}
+		#img8:hover .img7{transform:rotate(-20deg) translate(150px,20px) scale(0.9,0.9);}		
+		#img8:hover .img6{transform:rotate(40deg) translate(-150px,40px) scale(0.7,0.7);}
+		#img8:hover .img5{transform:rotate(-40deg) translate(150px,40px) scale(0.7,0.7);}
+		#img8:hover .img4{transform:rotate(60deg) translate(-150px,60px) scale(0.5,0.5);}
+		#img8:hover .img3{transform:rotate(-60deg) translate(150px,60px) scale(0.5,0.5);}
+		#img8:hover .img2{transform:rotate(80deg) translate(-150px,80px) scale(0.3,0.3);}
+		#img8:hover .img1{transform:rotate(-80deg) translate(150px,80px) scale(0.3,0.3);}
+	</style>
+	<body>
+	<br/>
+			<h1 class="title" id="character" >.陈联富最帅.</h1>
+			<br/>
+
+		<div id="img1">
+			<img class="img0" src="img/studio_0009.jpg"/>
+			<img class="img1" src="img/studio_0002.jpg"/>
+			<img class="img2" src="img/studio_0003.jpg"/>
+			<img class="img3" src="img/studio_0004.jpg"/>
+			<img class="img4" src="img/studio_0005.jpg"/>
+			<img class="img5" src="img/studio_0006.jpg"/>
+			<img class="img6" src="img/studio_0007.jpg"/>
+			<img class="img7" src="img/studio_0008.jpg"/>
+			<img class="img8" src="img/studio_0001.jpg"/>
+		</div>
+		<div id="img2">
+			<img class="img1" src="img/studio_0002.jpg"/>
+			<img class="img2" src="img/studio_0003.jpg"/>
+			<img class="img3" src="img/studio_0004.jpg"/>
+			<img class="img4" src="img/studio_0005.jpg"/>
+			<img class="img5" src="img/studio_0006.jpg"/>
+			<img class="img6" src="img/studio_0007.jpg"/>
+			<img class="img7" src="img/studio_0008.jpg"/>
+			<img class="img8" src="img/studio_0002.jpg"/>
+		</div>
+		<div id="img3">
+			<img class="img1" src="img/studio_0002.jpg"/>
+			<img class="img2" src="img/studio_0003.jpg"/>
+			<img class="img3" src="img/studio_0004.jpg"/>
+			<img class="img4" src="img/studio_0005.jpg"/>
+			<img class="img5" src="img/studio_0006.jpg"/>
+			<img class="img6" src="img/studio_0007.jpg"/>
+			<img class="img7" src="img/studio_0008.jpg"/>
+			<img class="img8" src="img/studio_0003.jpg"/>
+		</div>
+
+		<h1 class="title" id="character2" >.陈联富最优秀.</h1>
+			<br/>
+		
+		<div id="img4">
+			<img class="img1" src="img/studio_0002.jpg"/>
+			<img class="img2" src="img/studio_0003.jpg"/>
+			<img class="img3" src="img/studio_0004.jpg"/>
+			<img class="img4" src="img/studio_0005.jpg"/>
+			<img class="img5" src="img/studio_0006.jpg"/>
+			<img class="img6" src="img/studio_0007.jpg"/>
+			<img class="img7" src="img/studio_0008.jpg"/>
+			<img class="img8" src="img/studio_0004.jpg"/>
+		</div>
+		<div id="img5">
+			<img class="img1" src="img/studio_0002.jpg"/>
+			<img class="img2" src="img/studio_0003.jpg"/>
+			<img class="img3" src="img/studio_0004.jpg"/>
+			<img class="img4" src="img/studio_0005.jpg"/>
+			<img class="img5" src="img/studio_0006.jpg"/>
+			
+		</div>
+
+		<h1 class="title" id="character3" >.陈联富最努力.</h1>
+			<br/>
+			
+		<div id="img6">
+			<img class="img1" src="img/studio_0002.jpg"/>
+			<img class="img2" src="img/studio_0003.jpg"/>
+			<img class="img3" src="img/studio_0004.jpg"/>
+			<img class="img4" src="img/studio_0005.jpg"/>
+			<img class="img5" src="img/studio_0006.jpg"/>
+			<img class="img6" src="img/studio_0007.jpg"/>
+			<img class="img7" src="img/studio_0008.jpg"/>
+			<img class="img8" src="img/studio_0009.jpg"/>
+			<img class="img9" src="img/studio_0010.jpg"/>
+		</div>
+		<div id="img7">
+			<img class="img1" src="img/studio_0002.jpg"/>
+			<img class="img2" src="img/studio_0003.jpg"/>
+			<img class="img3" src="img/studio_0004.jpg"/>
+			<img class="img4" src="img/studio_0005.jpg"/>
+		</div>
+		
+		
+		<div id="img8">
+			<img class="img1" src="img/studio_0002.jpg"/>
+			<img class="img2" src="img/studio_0003.jpg"/>
+			<img class="img3" src="img/studio_0004.jpg"/>
+			<img class="img4" src="img/studio_0005.jpg"/>
+			<img class="img5" src="img/studio_0006.jpg"/>
+			<img class="img6" src="img/studio_0007.jpg"/>
+			<img class="img7" src="img/studio_0008.jpg"/>
+			<img class="img8" src="img/studio_0009.jpg"/>
+			<img class="img9" src="img/studio_0003.jpg"/>
+		</div>
+		<div style="width:100%;height:300px"></div>
+		<br/>
+            <h1 class="title" id="character1">.陈联富最无敌.</h1>
+<script type="text/javascript">
+         
+    var i=0;
+    setInterval('changeColor()',500);
+        function changeColor(){
+            var div=document.getElementById('character'); //获得div元素
+			var div1=document.getElementById('character1'); //获得div元素
+			var div2=document.getElementById('character2'); //获得div元素
+			var div3=document.getElementById('character3'); //获得div元素
+            var colorArr=['#8A2BE2','#DEB887','#7FFF00','#008B8B','#FF1493']; //建立颜色库
+            if(i==colorArr.length){ 
+                    i=0;
+                }else{
+                    div.style.color=colorArr[i++%colorArr.length]; //循环颜色
+					div1.style.color=colorArr[i++%colorArr.length]; //循环颜色
+					div2.style.color=colorArr[i++%colorArr.length]; //循环颜色
+					div3.style.color=colorArr[i++%colorArr.length]; //循环颜色
+                }
+            }
+</script>
+	</body>
 </html>
